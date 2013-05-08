@@ -1,0 +1,300 @@
+{% set page_width = 940 %}
+{% set sidebar_width = 220 %}
+{% set body_font_stack = 'Arial, sans-serif' %}
+{% set headline_font_stack = 'Arial, sans-serif' %}
+{% set code_font_stack = "'Consolas', 'Menlo', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace" %}
+
+@import url("basic.css");
+
+/* -- page layout ----------------------------------------------------------- */
+
+body {
+    font-family: {{ body_font_stack }};
+    font-size: 14px;
+    background-color: white;
+    color: #000;
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+div.document {
+    width: {{ page_width }}px;
+    margin: 0 auto;
+}
+
+div.related {
+    width: {{ page_width - 20 }}px;
+    padding: 5px 10px;
+    background: #B3CDDB;
+    margin: 15px auto 15px auto;
+    font-size: 1em;
+}
+
+div.bodywrapper {
+    margin: 0 0 0 {{ sidebar_width }}px;
+}
+
+div.documentwrapper {
+    float: left;
+    width: 100%;
+}
+
+div.sphinxsidebar {
+    width: {{ sidebar_width }}px;
+}
+
+a {
+    color: #0F67A1;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #0F67A1;
+    text-decoration: underline;
+}
+
+div.body h1,
+div.body h2,
+div.body h3,
+div.body h4,
+div.body h5,
+div.body h6 {
+    font-family: {{ headline_font_stack }};
+    font-weight: normal;
+    margin: 20px 0px 10px 0px;
+    padding: 0;
+    color: #666666;
+}
+
+div.body h1 { margin-top: 0; padding-top: 0; font-size: 200%; }
+div.body h2 { font-size: 20px; color: }
+div.body h3 { font-size: 16px; }
+div.body h4 { font-size: 15px; font-weight: bold; }
+div.body h5 { font-size: 15px; font-weight: bold; }
+div.body h6 { font-size: 15px; font-weight: bold; }
+
+div.body h1 a.toc-backref,
+div.body h2 a.toc-backref,
+div.body h3 a.toc-backref,
+div.body h4 a.toc-backref,
+div.body h5 a.toc-backref,
+div.body h6 a.toc-backref {
+    color: inherit!important;
+    text-decoration: none;
+}
+
+pre, tt {
+    font-family: {{ code_font_stack }};
+    font-size: 0.9em;
+}
+
+table.docutils thead tr th {
+  background-color: rgba(232, 239, 243, 0.8);
+}
+
+table.docutils {
+    border: 1px solid #888;
+    -moz-box-shadow: 2px 2px 4px #eee;
+    -webkit-box-shadow: 2px 2px 4px #eee;
+    box-shadow: 2px 2px 4px #eee;
+}
+
+table.docutils td, table.docutils th {
+    border: 1px solid #888;
+    padding: 0.25em 0.7em;
+}
+
+table.field-list, table.footnote {
+    border: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+table.footnote {
+    margin: 15px 0;
+    width: 100%;
+    border: 1px solid #eee;
+    background: #fdfdfd;
+    font-size: 0.9em;
+}
+
+table.footnote + table.footnote {
+    margin-top: -15px;
+    border-top: none;
+}
+
+table.field-list th {
+    padding: 0 0.8em 0 0;
+}
+
+table.field-list td {
+    padding: 0;
+}
+
+table.footnote td.label {
+    width: 0px;
+    padding: 0.3em 0 0.3em 0.5em;
+}
+
+table.footnote td {
+    padding: 0.3em 0.5em;
+}
+
+pre {
+    background: #FFFFFF;
+    padding: 7px 10px;
+    margin: 15px 0;
+    border: 1px solid #83A7BB;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    box-shadow: 2px 2px 4px #eee;
+    line-height: 1.3em;
+}
+
+a.reference {
+    text-decoration: none;
+}
+
+a.reference:hover {
+    text-decoration: underline;
+}
+
+div.body p, div.body dd, div.body li {
+    line-height: 1.4em;
+}
+
+html, body {
+ /* background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0)) no-repeat scroll 0 0 #E8EBEF; */
+ background: linear-gradient(to bottom, #F7F9F9 0%, #8BB1C6 15%, #98BFD3 40%, #AFD3E0 61%, #CEE7EF 74%, #FFFFFF 85%) repeat scroll 0 0 transparent;
+}
+
+body {
+  background: url("https://buildhive.cloudbees.com/buildhive-ui/img/spots.png") repeat-x fixed center 200px rgba(8255,255,255, .3);
+}
+
+.sphinxsidebarwrapper {
+  background: none repeat scroll 0 0 rgba(232, 239, 243, 0.8);
+  border-radius: 5px 0 0 5px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset, 0 0 1px 1px rgba(80, 84, 92, 0.1), 0 1px 2px rgba(80, 84, 92, 0.2);
+  z-index: 20;
+  margin-top: 5px;
+}
+
+div.body {
+  background: none repeat scroll 0 0 rgba(255, 255, 255, 0.85);
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 0 0 1px 1px rgba(80, 84, 92, 0.1), 0 1px 2px rgba(80, 84, 92, 0.5);
+  padding: 0px 30px 25px 30px;
+  position: relative;
+  z-index: 30;
+  min-height: 800px;
+}
+
+div.body h1 {
+  border-bottom: 1px solid #D9DCE3;
+  padding: 20px 30px;
+  margin: 0px -30px;
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 0 1px 0 #FFFFFF;
+}
+
+div.sphinxsidebar {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+div.sphinxsidebar h3, div.sphinxsidebar h4 {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+div.sphinxsidebar p  {
+  margin: 0px;
+}
+
+div.sphinxsidebar ul, div.sphinxsidebar ul ul, div.sphinxsidebar ul ul ul {
+  padding: 0px 0px;
+  margin: 0px;
+}
+
+div.sphinxsidebar li {
+  list-style: none;
+}
+
+div.sphinxsidebar li a {
+  padding-left: 5px;
+  margin-left: -5px;
+  display: block;
+}
+
+div.sphinxsidebar li li {
+  padding-left: 10px;
+}
+
+div.sphinxsidebar a {
+    color: #444;
+    text-decoration: none;
+}
+
+div.sphinxsidebar a:hover {
+    text-decoration: underline;
+}
+
+div.sphinxsidebar a.current {
+  background-color: #B5D0DE;
+  font: white;
+  border: 0px;
+}
+
+div.related {
+  background: none;
+  margin-bottom: 20px;
+  padding: 0px;
+  width: {{ page_width }}px;
+}
+
+.body table {
+  background-color: #ffffff;
+}
+
+#cloudbees-documentation #contents {
+  margin: 0px;
+}
+
+#contents {
+  border: 0px;
+  border-bottom: 1px solid #CCCCCC;
+  margin: 0 -30px 20px;
+  padding: 7px 7px 0;
+}
+
+#contents > ul:first-of-type:before {
+  content:"Table of contents";
+  font-size: 16px;
+  color: #666666;
+}
+
+#contents ul {
+    list-style: none outside none;
+    margin-top: 5px;
+    margin-left: 0;
+    padding-left: 25px;
+}
+
+#contents li {
+  margin-top: 5px;
+}
+
+#cloudbees-documentation #contents ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+#cloudbees-documentation #contents ul ul {
+  padding-left: 25px;
+}
